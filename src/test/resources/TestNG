@@ -1,0 +1,7 @@
+<suite name="Tests">
+    <test name="TitleTest" preserve-order="false">
+        <classes>
+            <class name="HomePageTest"/>
+        </classes>
+    </test>
+</suite>
