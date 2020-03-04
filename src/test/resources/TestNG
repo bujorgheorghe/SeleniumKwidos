@@ -1,4 +1,3 @@
-
 <suite name="Tests">
     <test name="TitleTest" preserve-order="false">
         <classes>
