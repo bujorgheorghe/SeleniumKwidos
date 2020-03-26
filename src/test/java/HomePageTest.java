@@ -9,12 +9,7 @@ public class HomePageTest extends BaseTest{
 
     @Test
     public void SignUpSuccess () {
-        List<Character> charSet = new ArrayList<>(Arrays.asList('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', '1', '2'));
-        Collections.shuffle(charSet, new Random());
-        String rand="";
-        for (int i = 0; i < charSet.size(); i++) {
-            rand=rand+charSet.get(i);
-        }
+        long rand=System.currentTimeMillis()
         driver.get("https://kwidos.com/auth/register/contractor");
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[formcontrolname='firstName']")));
         driver.findElement(By.cssSelector("[formcontrolname='firstName']")).sendKeys("George");
