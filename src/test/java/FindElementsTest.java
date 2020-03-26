@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 public class FindElementsTest extends BaseTest{
+
     @Test
     public void numberOfCardsAssert(){
         driver.get("https://kwidos.tk/offer/search");

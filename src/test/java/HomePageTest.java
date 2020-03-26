@@ -3,14 +3,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.*;
-
 public class HomePageTest extends BaseTest{
 
     @Test
     public void SignUpSuccess () {
-        long rand=System.currentTimeMillis()
-        driver.get("https://kwidos.com/auth/register/contractor");
+        long rand=System.currentTimeMillis();
+        driver.get("https://kwidos.tk/auth/register/contractor");
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[formcontrolname='firstName']")));
         driver.findElement(By.cssSelector("[formcontrolname='firstName']")).sendKeys("George");
         driver.findElement(By.cssSelector("[formcontrolname='lastName']")).sendKeys("Suz");
@@ -29,7 +27,7 @@ public class HomePageTest extends BaseTest{
     public void SignUpWrongCredentials () throws InterruptedException{
 
 
-        driver.get("https://kwidos.com/auth/register/contractor");
+        driver.get("https://kwidos.tk/auth/register/contractor");
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[formcontrolname='firstName']")));
         driver.findElement(By.cssSelector("[formcontrolname='firstName']")).sendKeys("George");
         driver.findElement(By.cssSelector("[formcontrolname='lastName']")).sendKeys("Suz");
@@ -45,7 +43,7 @@ public class HomePageTest extends BaseTest{
     @Test
     public void SignUpEmptyCredentials () throws InterruptedException{
 
-        driver.get("https://kwidos.com/auth/register/contractor");
+        driver.get("https://kwidos.tk/auth/register/contractor");
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[formcontrolname='firstName']")));
         driver.findElement(By.cssSelector("[class='col-lg-12 col-xs-12 col-md-12 checkbox-block'] p-checkbox")).click();
 
