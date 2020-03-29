@@ -3,7 +3,7 @@
         <classes>
             <class name="HomePageTest"/>
                 <methods>
-                    <exclude name="SignUpSuccess"/>
+                     <exclude name="SignUpSuccess"/>
                 </methods>
             <class name="FindElementsTest"/>
         </classes>

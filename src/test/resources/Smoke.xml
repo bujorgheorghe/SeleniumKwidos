@@ -3,7 +3,7 @@
         <classes>
             <class name="HomePageTest">
                 <methods>
-                    <include name="SignUpSuccess"/>
+                     <include name="SignUpSuccess"/>
                 </methods>
             </class>
         </classes>

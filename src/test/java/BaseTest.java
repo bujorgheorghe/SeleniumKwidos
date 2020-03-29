@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeMethod;
 
 
 public class BaseTest {
+
     WebDriver driver;
     WebDriverWait wait;
     @BeforeMethod
