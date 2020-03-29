@@ -22,8 +22,22 @@ dependencies {
 }
 
 test {
-    useTestNG() {
-        suites "src/test/resources/TestNG.xml"
+    useTestNG(){
+        suites("src/test/resources/TestNG.xml")
     }
 }
+
+task regression(type: Test) {
+    useTestNG() {
+        suites "src/test/resources/Regression.xml"
+    }
+}
+
+task smoke(type: Test) {
+    useTestNG() {
+        suites "src/test/resources/Smoke.xml"
+    }
+}
+
+
 

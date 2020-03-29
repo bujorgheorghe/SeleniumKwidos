@@ -1,8 +1,8 @@
 <suite name ="TestNG">
-    <test name = "test" preserve-order="true">
+    <test name = "Regression" preserve-order="true">
         <classes>
-            <class name="FindElementsTest"/>
             <class name="HomePageTest"/>
+            <class name="FindElementsTest"/>
         </classes>
     </test>
 </suite>

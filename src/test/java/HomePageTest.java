@@ -24,8 +24,7 @@ public class HomePageTest extends BaseTest{
     }
 
     @Test
-    public void SignUpWrongCredentials () throws InterruptedException{
-
+    public void SignUpWrongCredentials (){
 
         driver.get("https://kwidos.tk/auth/register/contractor");
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[formcontrolname='firstName']")));
@@ -41,7 +40,7 @@ public class HomePageTest extends BaseTest{
     }
 
     @Test
-    public void SignUpEmptyCredentials () throws InterruptedException{
+    public void SignUpEmptyCredentials (){
 
         driver.get("https://kwidos.tk/auth/register/contractor");
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[formcontrolname='firstName']")));

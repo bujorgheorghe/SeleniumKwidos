@@ -1,0 +1,11 @@
+<suite name ="TestNG">
+    <test name = "Smoke" preserve-order="true">
+        <classes>
+            <class name="HomePageTest">
+                <methods>
+                    <include  name="SignUpWrongCredentials"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
