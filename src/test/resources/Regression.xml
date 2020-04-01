@@ -1,4 +1,4 @@
-<suite name ="TestNG">
+<suite name = "TestNG">
     <test name = "Regression" preserve-order="true">
         <classes>
             <class name="HomePageTest"/>
